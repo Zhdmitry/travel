@@ -112,13 +112,13 @@ header::after {
   width: 1200px;
   height: 90px;
 }
-.header-title {
+.header-title-wrapper {
   display: flex;
   align-items: center;
   width: 216px;
   height: 31px;
 }
-h1 {
+.header-title {
   font-family: "Magra";
   font-style: normal;
   font-weight: 600;
@@ -126,6 +126,13 @@ h1 {
   line-height: 38.8px;
   color: #ffffff;
   padding-left: 6px;
+}
+
+.header-logo{
+    position: relative;
+    bottom: 4px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-add-wrapper {
