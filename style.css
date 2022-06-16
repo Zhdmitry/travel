@@ -29,6 +29,13 @@ dd {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+p:hover{
+  cursor:default;
+}
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
@@ -103,8 +110,8 @@ header::after {
 }
 
 .header-wrapper {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,11 +135,11 @@ header::after {
   padding-left: 6px;
 }
 
-.header-logo{
-    position: relative;
-    bottom: 4px;
-    width: 30px;
-    height: 30px;
+.header-logo {
+  position: relative;
+  bottom: 4px;
+  width: 30px;
+  height: 30px;
 }
 
 .header-add-wrapper {
@@ -149,40 +156,130 @@ header::after {
   align-content: center;
 }
 
-.header-nav-link{
-    text-decoration: none;
-    font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-
-color: #FFFFFF;
+.header-nav-link {
+  text-decoration: none;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 2px;
+  transition: 1s;
 }
 
-.header-button{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    width: 103px;
-    height: 41px;
-    border: none;
-    background: #0D606F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-border-radius: 10px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-
-color: #FFFFFF;
+.header-nav-link:hover {
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color: black;
 }
 
+.header-button {
+  display: flex;
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 41px;
+  border: none;
+  background: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
 
-main {
+.header-button:hover {
+  cursor: pointer;
+  transition: 1s;
+transform: translateY(2px);
+  box-shadow: none;
+  background: #0897b1;
+}
+
+.explore {
   height: 675px;
   background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
   background-position-y: -90px;
+  display: flex;
+}
+
+.explore-wrapper {
+  width: 1200px;
+  height: 422px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.explore-title {
+  width: 892px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #ffffff;
+}
+
+.explore-desc {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 33px;
+  margin-bottom: 46px;
+}
+
+.explore-input {
+  height: 95px;
+  width: 892px;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2785c;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding-left: 41px;
+}
+
+.explore-button {
+  position: relative;
+  z-index: 2;
+  right: 250px;
+  width: 228px;
+  height: 59px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.explore-button:hover {
+  cursor: pointer;
+  transition: 1s;
+  box-shadow: none;
+  transform: translateY(2px);
+  background: #0897b1;
 }
