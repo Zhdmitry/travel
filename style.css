@@ -399,6 +399,7 @@ header::after {
   width: 80px;
   height: 20px;
   justify-content: space-between;
+  margin-top: 4px;
 }
 
 .slider {
@@ -413,7 +414,7 @@ header::after {
 }
 
 .destinations-button {
-  margin-top: 44px;
+  margin-top: 40px;
   width: 228px;
   height: 59px;
   border: none;
@@ -435,7 +436,7 @@ header::after {
 .stories {
   display: flex;
   width: 1440px;
-  height: 1322px;
+  height: 1440px;
   margin: 0 auto;
   padding-top: 80px;
   flex-direction: column;
@@ -459,6 +460,7 @@ header::after {
 
 .stories-wrapper-backgr {
   width: 1440px;
+  height: 1270px;
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
@@ -541,4 +543,60 @@ header::after {
   color: #ffffff;
   padding-left: 50px;
   margin-bottom: 40px;
+}
+
+footer{
+  width: 1440px;
+  height: 61px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background: url(./src/imgs/Rectangle\ 33.jpg);
+  background-position-y: -1270px;
+}
+.footer-wrapper{
+  display: flex;
+  width: 1200px;
+  height: 61px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  width: 142px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-img{
+  height: 35px;
+}
+
+.footer-desc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+
+.social-links-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-links{
+  display: flex;
+  flex-direction: row;
+  width: 141px;
+  height: 34px;
+  justify-content: space-between;
 }
