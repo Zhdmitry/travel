@@ -33,8 +33,8 @@ h1,
 h2,
 h3,
 h4,
-p:hover{
-  cursor:default;
+p:hover {
+  cursor: default;
 }
 /* Выставляем основные настройки по-умолчанию для body */
 body {
@@ -85,6 +85,10 @@ select {
 }
 
 /*start header styles*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -95,8 +99,7 @@ header {
   position: relative;
   z-index: 2;
   height: 90px;
-  background: rgba(242, 120, 92, 0.7)
-    url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+  background: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 header::after {
@@ -199,7 +202,7 @@ header::after {
 .header-button:hover {
   cursor: pointer;
   transition: 1s;
-transform: translateY(2px);
+  transform: translateY(2px);
   box-shadow: none;
   background: #0897b1;
 }
@@ -284,32 +287,30 @@ transform: translateY(2px);
   background: #0897b1;
 }
 
-
-.steps{
-  background: #E5E5E5;
+.steps {
+  background: #e5e5e5;
   height: 384px;
 }
 
-.steps-wrapper{
+.steps-wrapper {
   display: flex;
   width: 1200px;
   margin: 0 auto;
   padding-top: 80px;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.steps-title{
-  font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 53px;
-color: #F2785C;
+.steps-title {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #f2785c;
 }
 
-.steps-desc-wrap{
+.steps-desc-wrap {
   display: flex;
   width: 1177px;
   flex-direction: row;
@@ -317,26 +318,227 @@ color: #F2785C;
   justify-content: space-between;
 }
 
-.step-desc{
-  font-family: 'Aleo';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #0D606F;
-margin-top: 30px;
+.step-desc {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d606f;
+  margin-top: 30px;
 }
 
-.step-img{
+.step-img {
   width: 100px;
   height: 100px;
 }
-.step{
+.step {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.step2{
+.step2 {
   padding-left: 71px;
+}
+
+.destinations {
+  display: flex;
+  background: #e5e5e5;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.destinations-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.destinations-title {
+  margin-top: 40px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #f2785c;
+}
+
+.destinations-cards {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  width: 2520px;
+  height: 820px;
+  justify-content: space-between;
+}
+
+.dest-card-img {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+}
+
+.dest-card-desc {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+  position: relative;
+  bottom: 82px;
+  left: 16px;
+}
+
+.dest-slider {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+.slider-active {
+  background: #f2785c;
+}
+
+.destinations-button {
+  margin-top: 44px;
+  width: 228px;
+  height: 59px;
+  border: none;
+  background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 50px;
+}
+
+.stories {
+  display: flex;
+  width: 1440px;
+  height: 1322px;
+  margin: 0 auto;
+  padding-top: 80px;
+  flex-direction: column;
+  align-items: center;
+  background: #e5e5e5;
+}
+
+.stories-title {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #f2785c;
+  margin-bottom: 40px;
+}
+
+.stories-wrapper {
+  background: url(./src/imgs/Rectangle\ 33.jpg);
+}
+
+.stories-wrapper-backgr {
+  width: 1440px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.stories-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1090px;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.stories-card {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.stories-card-img {
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  border-radius: 16px;
+}
+.stories-desc-wrap {
+  width: 760px;
+}
+.stories-card-title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #0d606f;
+  margin-bottom: 25px;
+}
+
+.stories-card-desc {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0d606f;
+}
+
+.stories-card-more {
+  text-decoration: none;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: underline;
+
+  color: #0d606f;
+}
+
+.stories-button {
+  width: 228px;
+  height: 59px;
+  border: none;
+  background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 50px;
+  margin-bottom: 40px;
 }

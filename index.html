@@ -28,10 +28,18 @@
         <div class="header-add-wrapper">
           <nav class="header-nav">
             <ul class="header-nav-ul">
-              <li><a class="header-nav-link" href="#">How It Works</a></li>
-              <li><a class="header-nav-link" href="#">Plan Your Trip</a></li>
-              <li><a class="header-nav-link" href="#">Destinations</a></li>
-              <li><a class="header-nav-link" href="#">Travel Stories</a></li>
+              <li>
+                <a class="header-nav-link" href="#explore">How It Works</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#steps">Plan Your Trip</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#destinations">Destinations</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="#stories">Travel Stories</a>
+              </li>
             </ul>
           </nav>
           <button class="header-button" type="submit">Login</button>
@@ -39,7 +47,7 @@
       </div>
     </header>
     <main>
-      <section class="explore">
+      <section id="explore" class="explore">
         <div class="explore-wrapper">
           <h1 class="explore-title">Explore the beauty of the World</h1>
           <p class="explore-desc">
@@ -56,23 +64,169 @@
           </div>
         </div>
       </section>
-      <section class="steps">
+      <section id="steps" class="steps">
         <div class="steps-wrapper">
           <h2 class="steps-title">3 STEPS TO THE PERFECT TRIP</h2>
           <div class="steps-desc-wrap">
             <div class="step">
-              <img class="step-img" src="./src/imgs/Frame 28.svg" alt="step1">
+              <img class="step-img" src="./src/imgs/Frame 28.svg" alt="step1" />
               <p class="step-desc">Tell us what you want to do</p>
             </div>
             <div class="step step2">
-              <img class="step-img" src="./src/imgs/Frame 11.svg" alt="step2">
+              <img class="step-img" src="./src/imgs/Frame 11.svg" alt="step2" />
               <p class="step-desc">Share us preferable dates</p>
             </div>
             <div class="step">
-              <img class="step-img" src="./src/imgs/Frame 12.svg" alt="step3">
+              <img class="step-img" src="./src/imgs/Frame 12.svg" alt="step3" />
               <p class="step-desc">We will give you recommendations</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="destinations" class="destinations">
+        <div class="destinations-wrapper">
+          <h2 class="destinations-title">POPULAR DESTINATIONS</h2>
+          <div class="destinations-cards">
+            <div class="dest-card">
+              <img
+                class="dest-card-img"
+                src="./src/imgs/Rectangle 23.jpg"
+                alt="spain"
+              />
+              <p class="dest-card-desc">SPAIN</p>
+            </div>
+            <div class="dest-card">
+              <img
+                class="dest-card-img"
+                src="./src/imgs/Rectangle 24.jpg"
+                alt="japan"
+              />
+              <p class="dest-card-desc">JAPAN</p>
+            </div>
+            <div class="dest-card">
+              <img
+                class="dest-card-img"
+                src="./src/imgs/Rectangle 25.jpg"
+                alt="usa"
+              />
+              <p class="dest-card-desc">USA</p>
+            </div>
+          </div>
+          <div class="dest-slider">
+            <div class="slider"></div>
+            <div class="slider slider-active"></div>
+            <div class="slider"></div>
+          </div>
+          <button class="destinations-button" type="submit">Find More</button>
+        </div>
+      </section>
+      <section id="stories" class="stories">
+        <h2 class="stories-title">TRAVEL STORIES</h2>
+        <div class="stories-wrapper">
+          <div class="stories-wrapper-backgr">
+            <div class="stories-card-wrapper">
+              <div class="stories-card">
+                <img
+                  src="./src/imgs/Rectangle 29.jpg"
+                  alt="Thailand"
+                  class="stories-card-img"
+                />
+                <div class="stories-desc-wrap">
+                  <h3 class="stories-card-title">
+                    10 Photos of Attractive Thailand
+                  </h3>
+                  <p class="stories-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit...
+                  </p>
+                  <a href="#" class="stories-card-more">Read More</a>
+                </div>
+              </div>
+              <div class="stories-card">
+                <img
+                  src="./src/imgs/Rectangle 30.jpg"
+                  alt="Utah"
+                  class="stories-card-img"
+                />
+                <div class="stories-desc-wrap">
+                  <h3 class="stories-card-title">
+                    Canyonlands National Park, Utah
+                  </h3>
+                  <p class="stories-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit...
+                  </p>
+                  <a href="#" class="stories-card-more">Read More</a>
+                </div>
+              </div>
+              <div class="stories-card">
+                <img
+                  src="./src/imgs/Rectangle 31.jpg"
+                  alt="Mountains"
+                  class="stories-card-img"
+                />
+                <div class="stories-desc-wrap">
+                  <h3 class="stories-card-title">
+                    I left my heart in the Mountains!
+                  </h3>
+                  <p class="stories-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit...
+                  </p>
+                  <a href="#" class="stories-card-more">Read More</a>
+                </div>
+              </div>
+              <div class="stories-card">
+                <img
+                  src="./src/imgs/Rectangle 32.jpg"
+                  alt="The Longest journey in my life!"
+                  class="stories-card-img"
+                />
+                <div class="stories-desc-wrap">
+                  <h3 class="stories-card-title">
+                    The Longest journey in my life!
+                  </h3>
+                  <p class="stories-card-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit...
+                  </p>
+                  <a href="#" class="stories-card-more">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <button class="stories-button" type="submit">See More</button>
+
+          </div>
+
         </div>
       </section>
     </main>
