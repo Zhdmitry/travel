@@ -99,7 +99,7 @@ header {
   position: relative;
   z-index: 2;
   height: 90px;
-  background: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+  background: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash1.jpg);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 header::after {
@@ -221,7 +221,7 @@ header::after {
 
 .explore {
   height: 675px;
-  background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+  background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash1.jpg);
   background-position-y: -90px;
   display: flex;
 }
@@ -498,7 +498,7 @@ header::after {
 }
 
 .stories-wrapper {
-  background: url(./src/imgs/Rectangle\ 33.jpg);
+  background: url(./src/imgs/Rectangle33.jpg);
 }
 
 .stories-wrapper-backgr {
@@ -620,7 +620,7 @@ footer {
   height: 61px;
   margin: 0 auto;
   margin-top: 2px;
-  background: url(./src/imgs/Rectangle\ 33.jpg);
+  background: url(./src/imgs/Rectangle33.jpg);
   background-position-y: -1270px;
 }
 .footer-wrapper {
