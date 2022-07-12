@@ -85,8 +85,14 @@ select {
 }
 
 /*start header styles*/
+
 html {
   scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+  width: 0px;
 }
 
 body {
@@ -119,7 +125,7 @@ header::after {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   height: 90px;
 }
 .header-title-wrapper {
@@ -179,11 +185,11 @@ header::after {
   color: black;
 }
 
-.header-nav-link:active{
+.header-nav-link:active {
   color: #0897b1;
 }
 
-.header-nav-link:visited{
+.header-nav-link:visited {
   color: #b1087096;
 }
 
@@ -215,8 +221,16 @@ header::after {
   background: #0897b1;
 }
 
-.header-button:active{
+.header-button:active {
   color: #0d606f;
+}
+
+.burger-logo {
+  display: none;
+}
+
+.burger-menu{
+  display: none;
 }
 
 .explore {
@@ -299,7 +313,7 @@ header::after {
   background: #0897b1;
 }
 
-.explore-button:active{
+.explore-button:active {
   color: #0d606f;
 }
 
@@ -365,13 +379,17 @@ header::after {
   justify-content: center;
   overflow-x: hidden;
 }
-
+.arrow-right{
+  display: none;
+}
+.arrow-left{
+  display: none;
+}
 .destinations-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .destinations-title {
@@ -427,7 +445,7 @@ header::after {
   background: rgba(242, 120, 92, 0.5);
 }
 
-.slider:hover{
+.slider:hover {
   cursor: pointer;
   transition: 1s;
   transform: scale(1.1);
@@ -458,27 +476,24 @@ header::after {
   padding-left: 50px;
 }
 
-
-.destinations-button:hover{
-  
+.destinations-button:hover {
   cursor: pointer;
   transition: 1s;
   box-shadow: none;
   transform: translateY(3px);
-  background:  #0897b1 url(./src/imgs/bi_arrow-right.svg);
+  background: #0897b1 url(./src/imgs/bi_arrow-right.svg);
   background-repeat: no-repeat;
   background-position: 30px center;
   box-shadow: none;
-
 }
 
-.destinations-button:active{
+.destinations-button:active {
   color: #0d606f;
 }
 
 .stories {
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   height: 1438px;
   margin: 0 auto;
   padding-top: 78px;
@@ -498,16 +513,19 @@ header::after {
 }
 
 .stories-wrapper {
+  max-width: 1440px;
   background: url(./src/imgs/Rectangle33.jpg);
+  overflow: hidden;
 }
 
 .stories-wrapper-backgr {
-  width: 1440px;
+ width: 1440px;
   height: 1269px;
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 auto;
 }
 
 .stories-card-wrapper {
@@ -567,15 +585,15 @@ header::after {
   color: #0d606f;
 }
 
-.stories-card-more:hover{
+.stories-card-more:hover {
   cursor: pointer;
   transition: 1s;
   font-size: 21px;
   text-decoration: none;
-  color:#0897b1;
+  color: #0897b1;
 }
 
-.stories-card-more:active{
+.stories-card-more:active {
   color: #0d606f;
 }
 
@@ -600,8 +618,7 @@ header::after {
   margin-bottom: 0px;
 }
 
-
-.stories-button:hover{
+.stories-button:hover {
   cursor: pointer;
   transition: 1s;
   transform: translateY(2px);
@@ -611,12 +628,12 @@ header::after {
   background-position: 30px center;
 }
 
-.stories-button:active{
+.stories-button:active {
   color: #0d606f;
 }
 
 footer {
-  width: 1440px;
+  max-width: 1440px;
   height: 61px;
   margin: 0 auto;
   margin-top: 2px;
@@ -640,18 +657,17 @@ footer {
   align-items: center;
 }
 
-
-.footer-link{
+.footer-link {
   transition: 1s;
 }
-.footer-link:hover{
+.footer-link:hover {
   transition: 1s;
   transform: scale(1.1);
   background-color: #ffffff48;
   border-radius: 5px;
 }
 
-.footer-link:active{
+.footer-link:active {
   background-color: #4ab3c5c0;
 }
 
@@ -685,19 +701,1450 @@ footer {
   justify-content: space-between;
 }
 
-
-.social-link{
+.social-link {
   transition: 1s;
 }
 
-
-.social-link:hover{
+.social-link:hover {
   transition: 1s;
   transform: scale(1.1);
   background-color: #ffffff48;
   border-radius: 5px;
 }
 
-.social-link:active{
+.social-link:active {
   background-color: #4ab3c5c0;
 }
+
+@media (max-width:1460px) {
+
+  .stories {
+    display: flex;
+    max-width:auto;
+    height: 1438px;
+    margin: 0 auto;
+    padding-top: 78px;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+    overflow-x: hidden;
+  }
+  
+  .stories-title {
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #f2785c;
+    margin-bottom: 40px;
+  }
+  
+  .stories-wrapper {
+    max-width: auto;
+    background: url(./src/imgs/Rectangle33.jpg);
+    overflow: hidden;
+  }
+  
+  .stories-wrapper-backgr {
+   width: initial;
+    height: 1269px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .stories-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    height: 1090px;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 39px;
+  }
+  
+}
+
+@media (max-width: 1250px) {
+  .header-wrapper {
+    max-width: 90vw;
+  }
+  .header-add-wrapper {
+    width: 80vw;
+  }
+  .header-nav-ul {
+    width: 60vw;
+  }
+
+  .explore-wrapper {
+    width: 90vw;
+  }
+  .explore-input-wrapper {
+    max-width: 90vw;
+  }
+  .explore-input {
+    width: 80vw;
+  }
+  .explore-button {
+    right: 0;
+    margin-left: -24vw;
+  }
+
+  .steps-wrapper {
+    width: 90vw;
+  }
+
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+
+  .destinations-wrapper {
+    width: 90vw;
+  }
+
+  .stories-wrapper {
+    width: 100vw;
+  }
+  .stories-card {
+    width: 90vw;
+  }
+
+  .stories-desc-wrap {
+    width: 55vw;
+  }
+  .stories-card-title {
+    font-size: 24px;
+  }
+  .stories-card-wrapper {
+
+    width: 90vw;
+
+  }
+
+  .stories-card-desc {
+    font-size: 16px;
+  }
+  .footer-wrapper {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav-ul {
+    width: 60vw;
+  }
+
+  .header-button {
+    margin-left: 5px;
+  }
+  .explore-wrapper {
+    width: 90vw;
+  }
+
+  .explore-title {
+    width: 80vw;
+  }
+  .explore-desc {
+    width: 80vw;
+  }
+  .explore-input {
+    width: 80vw;
+  }
+  .explore-button {
+    right: 0;
+    margin-left: -32vw;
+  }
+
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+
+  .step-desc {
+    font-size: 14px;
+  }
+
+  .destinations {
+    height: auto;
+  }
+  .destinations-wrapper {
+    width: 90vw;
+  }
+
+  .destinations-cards {
+    width: 200vw;
+    height: auto;
+  }
+
+  .dest-card-img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .stories-wrapper {
+    width: 100vw;
+  }
+  .stories-card {
+    width: 95vw;
+  }
+
+  .stories-card-img {
+    width: 35vw;
+    height: auto;
+  }
+  .stories-desc-wrap {
+    width: 55vw;
+  }
+  .stories-card-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .stories-card-desc {
+    font-size: 12px;
+  }
+  .footer-wrapper {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    display: none;
+  }
+  .header-nav-ul {
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+
+  .explore-title {
+    width: 80vw;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .explore-desc {
+    width: 80vw;
+  }
+
+  .explore-input-wrapper {
+  }
+  .explore-input {
+    width: 80vw;
+    font-size: 14px;
+  }
+  .explore-button {
+    width: 20vw;
+    right: 0;
+    margin-left: -30vw;
+    font-size: 10px;
+  }
+
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+  .steps-title {
+    font-size: 26px;
+  }
+
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+
+  .step-desc {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .step-img {
+    width: 60px;
+    height: 60px;
+  }
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    text-align: center;
+  }
+
+  .step2 {
+    padding-left: 0vw;
+  }
+
+  .destinations {
+    height: auto;
+  }
+  .destinations-wrapper {
+    width: 90vw;
+  }
+
+  .destinations-title {
+    font-size: 26px;
+  }
+
+  .destinations-cards {
+    width: 200vw;
+    height: auto;
+  }
+
+  .dest-card-img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .stories-wrapper {
+    width: 100vw;
+  }
+
+  .stories-title {
+    font-size: 26px;
+  }
+  .stories-card {
+    width: 95vw;
+  }
+
+  .stories-card-img {
+    width: 35vw;
+    height: auto;
+  }
+  .stories-desc-wrap {
+    width: 55vw;
+  }
+  .stories-card-title {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .stories-card-desc {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer-wrapper {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    display: none;
+  }
+  .header-nav-ul {
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+
+  .header-nav-link {
+    font-size: 12px;
+  }
+  .explore-title {
+    width: 80vw;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .explore-desc {
+    width: 80vw;
+  }
+
+  .explore-input {
+    width: 80vw;
+    font-size: 14px;
+  }
+  .explore-button {
+    width: 20vw;
+    right: 0;
+    margin-left: -25vw;
+    font-size: 10px;
+  }
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+  .steps-title {
+    font-size: 20px;
+  }
+
+  .steps-desc-wrap {
+    width: 90vw;
+  }
+
+  .step-desc {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .step-img {
+    width: 60px;
+    height: 60px;
+  }
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    text-align: center;
+  }
+
+  .step2 {
+    padding-left: 0vw;
+  }
+
+  .destinations {
+    height: auto;
+  }
+  .destinations-wrapper {
+    width: 90vw;
+  }
+
+  .destinations-title {
+    font-size: 20px;
+  }
+
+  .destinations-cards {
+    width: 200vw;
+    height: auto;
+  }
+
+  .dest-card-img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .stories-wrapper {
+    width: 100vw;
+  }
+
+  .stories-title {
+    font-size: 20px;
+  }
+  .stories-card {
+    width: 95vw;
+  }
+
+  .stories-card-img {
+    width: 35vw;
+    height: auto;
+  }
+  .stories-desc-wrap {
+    width: 55vw;
+  }
+  .stories-card-title {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .stories-card-desc {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer-wrapper {
+    width: 90vw;
+  }
+  .footer-desc {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 390px) {
+ html{
+    overflow-x: hidden;
+  }
+
+  .header-title {
+    display: none;
+  }
+  .header-add-wrapper {
+    display: none;
+  }
+  header {
+    background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+    box-shadow: none;
+    background-position: 0 0px;
+    height: 90px;
+  }
+  header::after {
+    display: none;
+  }
+
+  .header-logo {
+    left: -4px;
+    bottom: -16px;
+  }
+
+  .burger-logo {
+    display: block;
+    position: relative;
+    top: -52%;
+    right: -86%;
+  }
+
+  .explore {
+    height: 161px;
+    background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+    background-position-y: -90px;
+    display: flex;
+  }
+
+  .explore-wrapper {
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .explore-title {
+    display: none;
+  }
+  .explore-desc {
+    display: none;
+  }
+
+  .explore-input {
+    width: 360px;
+    height: 48px;
+    padding: 0px;
+    font-family: "Aleo";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 15px;
+    color: #f2785c;
+  }
+  .explore-button {
+    right: 0;
+    margin-top: 10px;
+    margin-left: -29vw;
+    width:92px;
+    height:30px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+z-index: 1;
+  }
+
+  
+.steps {
+  background: #e5e5e5;
+  height: auto;
+}
+
+.steps-wrapper {
+  display: flex;
+  width: 390px;
+  margin: 0 auto;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F2785C;
+}
+
+.steps-desc-wrap {
+  display: flex;
+  width: 360px;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.step-desc {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #0D606F;
+  margin-top: 20px;
+}
+
+.step-img {
+  width: 70px;
+  height: 70px;
+}
+
+
+.step1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  text-align: start;
+}
+.desc1{
+  width: 75px;
+}
+.step2 {
+  width: 70px;
+  padding-left: 0px;
+}
+
+.desc2{
+  width: 120px;
+}
+
+.step3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:70px;
+  text-align: center;
+}
+
+
+.destinations {
+  display: flex;
+  background: #e5e5e5;
+  height: auto;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.destinations-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.destinations-title {
+  margin-top: 0px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F2785C;
+  
+}
+
+.destinations-cards {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 1120px;
+  height: 210px;
+  justify-content: space-between;
+}
+
+.dest-card-img {
+  width: 360px;
+  height: 210px;
+  border-radius: 16px;
+}
+
+.dest-card-desc {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  
+  color: #FFFFFF;
+  position: relative;
+  bottom: 203px;
+  left: 14px;
+}
+
+.dest-slider {
+  display: flex;
+  flex-direction: row;
+  width:36px;
+  height: 8px;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.slider {
+  width: 8px;
+  height: 8px;
+  border-radius: 15px;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+
+
+.destinations-button {
+  transition: 1s;
+  margin-top: 22px;
+  width:92px;
+  height: 30px;
+  border: none;
+  background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 10px center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: center;
+  text-align: right;
+  
+  color: #FFFFFF;
+  padding-left: 30px;
+}
+
+.arrow-left{
+display: block;
+position: absolute;
+top: 575px;
+right: 335px;
+}
+
+.arrow-right{
+display: block;
+position: absolute;
+top: 575px;
+right: 25px;
+}
+
+
+
+.stories {
+
+  padding-top: 20px;
+height: auto;
+}
+
+.stories-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F2785C;
+  margin-bottom: 10px;
+}
+
+.stories-wrapper {
+  max-width: 1440px;
+  background: url(./src/imgs/Rectangle28.jpg);
+}
+
+.stories-wrapper-backgr {
+  width: 100vw;
+  height:auto;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:auto;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.stories-card {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width:92vw;
+  height: 145px;
+  justify-content: space-between;
+}
+
+.stories-card-img {
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  border-radius: 16px;
+  width: 155px;
+  height: 130px;
+}
+.stories-desc-wrap {
+  width: auto;
+  padding-left: 10px;
+}
+.stories-card-title {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #0D606F;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.stories-card-desc {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: #0D606F;
+max-height:80px;
+
+
+}
+
+.stories-card-more {
+  transition: 1s;
+  font-family: 'Aleo';
+font-style: normal;
+font-weight: 700;
+font-size: 9px;
+line-height: 11px;
+text-decoration-line: underline;
+color: #0D606F;
+padding: 0px;
+margin-bottom: -20px;
+
+}
+
+.stories-card-more:hover {
+  cursor: pointer;
+  transition: 1s;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0897b1;
+}
+
+.stories-card-more:active {
+  color: #0d606f;
+}
+
+.stories-button {
+  transition: 1s;
+  width: 92px;
+  height: 30px;
+  border: none;
+  background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 15px center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: center;
+  text-align: right;
+  
+  color: #FFFFFF;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.stories-button:hover {
+  cursor: pointer;
+  transition: 1s;
+  transform: translateY(2px);
+  box-shadow: none;
+  background: #0897b1 url(./src/imgs/bi_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: 30px center;
+}
+
+
+footer {
+  max-width: 390px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 0px;
+  background: url(./src/imgs/Rectangle28.jpg);
+  background-position-y: -629px;
+}
+.footer-wrapper {
+
+  width: 360px;
+
+}
+
+.footer-links {
+  display: none;
+
+}
+
+
+.footer-desc {
+display: none;
+}
+
+.social-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  width: 141px;
+  height: 34px;
+  justify-content: space-between;
+}
+
+.burger{
+  display: block;
+  width: 32px;
+  z-index: 99;
+}
+
+.burger:hover{
+  cursor: pointer;
+}
+
+.burger-menu{
+  transition: 1s;
+  position: relative;
+  z-index: 90;
+  top: -50px;
+  right: -35vw;
+  display: block;
+  width: 165px;
+  height: 250px;
+  background: #F2785C;
+  box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+  border-radius: 10px;
+}
+
+
+.burger-menu-active{
+  transition: 1s;
+  position: relative;
+  z-index: 90;
+  top: -50px;
+  right: 35vw;
+}
+
+
+.burger-links{
+  font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+
+color: #FFFFFF;
+text-decoration: none;
+
+}
+
+.burger-close{
+  position: relative;
+  top: 4px;
+  left: 4px;
+  padding: 4px;
+}
+
+.burger-close:hover{
+cursor: pointer;
+transform: scale(1.2);
+}
+
+.burger-links-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.burger-links{
+  padding: 5px;
+  margin-right: 2px;
+  margin-bottom: 0px;
+}
+
+.burger-links:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  }
+}
+
+
+@media (max-width: 380px) {
+  html{
+     overflow-x: hidden;
+   }
+ 
+   .header-title {
+     display: none;
+   }
+   .header-add-wrapper {
+     display: none;
+   }
+   header {
+     background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+     box-shadow: none;
+     background-position: 0 0px;
+     height: 90px;
+   }
+   header::after {
+     display: none;
+   }
+ 
+   .header-logo {
+     left: -4px;
+     bottom: -16px;
+   }
+ 
+   .burger-logo {
+     display: block;
+     position: relative;
+     top: -52%;
+     right: -86%;
+     z-index: 99;
+   }
+ 
+   .explore {
+     height: 161px;
+     background-image: url(./src/imgs/garrett-parker-DlkF4-dbCOU-unsplash2.jpg);
+     background-position-y: -90px;
+     display: flex;
+   }
+ 
+   .explore-wrapper {
+     width: 80vw;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     margin-top: 50px;
+   }
+ 
+   .explore-title {
+     display: none;
+   }
+   .explore-desc {
+     display: none;
+   }
+ 
+   .explore-input {
+     width: 80vw;
+     height: 48px;
+     padding: 0px;
+     font-family: "Aleo";
+     font-style: italic;
+     font-weight: 400;
+     font-size: 10px;
+     line-height: 17px;
+     padding-left: 15px;
+     color: #f2785c;
+   }
+   .explore-button {
+     right: 0;
+     margin-top: 10px;
+     position: relative;
+     top: -55%;
+     right: -60%;
+     margin-left: 0px;
+     width:80px;
+     height:30px;
+     font-family: 'Red Hat Text';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 10px;
+     line-height: 15px;
+     color: #FFFFFF;
+ 
+   }
+ 
+   
+ .steps {
+   background: #e5e5e5;
+   height: auto;
+ }
+ 
+ .steps-wrapper {
+   display: flex;
+   width: 90vw;
+   margin: 0 auto;
+   padding-top: 20px;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .steps-title {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #F2785C;
+ }
+ 
+ .steps-desc-wrap {
+   display: flex;
+   width: 90vw;
+   flex-direction: row;
+   margin-top: 20px;
+   justify-content: space-between;
+ }
+ 
+ .step-desc {
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 12px;
+   color: #0D606F;
+   margin-top: 20px;
+ }
+ 
+ .step-img {
+   width: 70px;
+   height: 70px;
+ }
+ 
+ 
+ .step1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 70px;
+   text-align: start;
+ }
+ .desc1{
+   width: 75px;
+ }
+ .step2 {
+   width: 70px;
+   padding-left: 0px;
+ }
+ 
+ .desc2{
+   width: 120px;
+ }
+ 
+ .step3 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width:70px;
+   text-align: center;
+ }
+ 
+ 
+ .destinations {
+   display: flex;
+   background: #e5e5e5;
+   height: auto;
+   justify-content: center;
+   overflow-x: hidden;
+   margin-top: 20px;
+ }
+ 
+ .destinations-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+ }
+ 
+ .destinations-title {
+   margin-top: 0px;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #F2785C;
+   
+ }
+ 
+ .destinations-cards {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   width: 1120px;
+   height: 210px;
+   justify-content: space-between;
+ }
+ 
+ .dest-card-img {
+   width: 80vw;
+   height: 210px;
+   border-radius: 16px;
+ }
+ 
+ .dest-card-desc {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   
+   color: #FFFFFF;
+   position: relative;
+   bottom: 203px;
+   left: 14px;
+ }
+ 
+ .dest-slider {
+   display: flex;
+   flex-direction: row;
+   width:36px;
+   height: 8px;
+   justify-content: space-between;
+   margin-top: -20px;
+ }
+ 
+ .slider {
+   width: 8px;
+   height: 8px;
+   border-radius: 15px;
+   background: rgba(242, 120, 92, 0.5);
+ }
+ 
+ 
+ 
+ .destinations-button {
+   transition: 1s;
+   margin-top: 22px;
+   width:92px;
+   height: 30px;
+   border: none;
+   background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+   background-repeat: no-repeat;
+   background-size: 10px;
+   background-position: 10px center;
+   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+     0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 11px;
+   line-height: 15px;
+   /* identical to box height */
+   
+   display: flex;
+   align-items: center;
+   text-align: right;
+   
+   color: #FFFFFF;
+   padding-left: 30px;
+ }
+ 
+ .arrow-left{
+ display: block;
+ position: absolute;
+ top: 575px;
+ right: 80vw;
+ }
+ 
+ .arrow-right{
+ display: block;
+ position: absolute;
+ top: 575px;
+ right: 15vw;
+ }
+ 
+ 
+ 
+ .stories {
+ 
+   padding-top: 20px;
+ height: auto;
+ }
+ 
+ .stories-title {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: #F2785C;
+   margin-bottom: 10px;
+ }
+ 
+ .stories-wrapper {
+   max-width: 1440px;
+   background: url(./src/imgs/Rectangle28.jpg);
+ }
+ 
+ .stories-wrapper-backgr {
+   width: 100vw;
+   height:auto;
+   background: rgba(255, 255, 255, 0.7);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .stories-card-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height:auto;
+   justify-content: space-between;
+   margin-top: 10px;
+   margin-bottom: -5px;
+ }
+ .stories-card {
+   z-index: 1;
+   display: flex;
+   flex-direction: row;
+   width:92vw;
+   height: 145px;
+   justify-content: space-between;
+ }
+ 
+ .stories-card-img {
+   filter: drop-shadow(0px 4px 4px #0d606f);
+   border-radius: 16px;
+   width: 155px;
+   height: 130px;
+ }
+ .stories-desc-wrap {
+   width: auto;
+   padding-left: 10px;
+ }
+ .stories-card-title {
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 11px;
+   line-height: 13px;
+   color: #0D606F;
+   margin-bottom: 10px;
+   margin-top: 5px;
+ }
+ 
+ .stories-card-desc {
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 5px;
+   line-height: 11px;
+   color: #0D606F;
+ max-height:80px;
+ 
+ 
+ }
+ 
+ .stories-card-more {
+   transition: 1s;
+   font-family: 'Aleo';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 9px;
+ line-height: 11px;
+ text-decoration-line: underline;
+ color: #0D606F;
+ padding: 0px;
+ margin-bottom: -20px;
+ 
+ }
+ 
+ .stories-card-more:hover {
+   cursor: pointer;
+   transition: 1s;
+   font-size: 16px;
+   text-decoration: none;
+   color: #0897b1;
+ }
+ 
+ .stories-card-more:active {
+   color: #0d606f;
+ }
+ 
+ .stories-button {
+   transition: 1s;
+   width: 92px;
+   height: 30px;
+   border: none;
+   background: #0d606f url(./src/imgs/bi_arrow-right.svg);
+   background-repeat: no-repeat;
+   background-size: 10px;
+   background-position: 15px center;
+   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+     0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 11px;
+   line-height: 15px;
+   /* identical to box height */
+   
+   display: flex;
+   align-items: center;
+   text-align: right;
+   
+   color: #FFFFFF;
+   padding-left: 30px;
+   margin-bottom: 15px;
+ }
+ 
+ .stories-button:hover {
+   cursor: pointer;
+   transition: 1s;
+   transform: translateY(2px);
+   box-shadow: none;
+   background: #0897b1 url(./src/imgs/bi_arrow-right.svg);
+   background-repeat: no-repeat;
+   background-position: 30px center;
+ }
+ 
+ 
+ footer {
+   max-width: 390px;
+   height: auto;
+   margin: 0 auto;
+   margin-top: 0px;
+   background: url(./src/imgs/Rectangle28.jpg);
+   background-position-y: -629px;
+ }
+ .footer-wrapper {
+ 
+   width: 360px;
+ 
+ }
+ 
+ .footer-links {
+   display: none;
+ 
+ }
+ 
+ 
+ .footer-desc {
+ display: none;
+ }
+ 
+ .social-links-wrapper {
+   display: flex;
+   flex-direction: row;
+   width: 360px;
+   justify-content: center;
+   align-items: center;
+ }
+ .social-links {
+   display: flex;
+   flex-direction: row;
+   width: 141px;
+   height: 34px;
+   justify-content: space-between;
+ }
+ 
+
+ }
