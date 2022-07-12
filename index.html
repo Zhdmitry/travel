@@ -45,6 +45,23 @@
           <button class="header-button" type="submit">Login</button>
         </div>
       </div>
+      <div class="burger-logo">
+        <div class="burger">
+          <img class="burger-logo-img" src="./src/imgs/eva_menu-outline.png" alt="burger-menu">
+        </div>
+        
+        <div class="burger-menu">
+          <img class="burger-close" src="./src/imgs/clarity_window-close-line.png" alt="close">
+          <ul  class="burger-links-wrap">
+            <li class="burger-links"><a href="#explore" class="burger-links">How It Works</a></li>
+            <li class="burger-links"><a href="#steps" class="burger-links">Plan Your Trip</a></li>
+            <li class="burger-links"><a href="#destinations" class="burger-links">Destinations</a></li>
+            <li class="burger-links"><a href="#stories" class="burger-links">Travel Stories</a></li>
+            <li class="burger-links"><a href="#" class="burger-links">Account</a></li>
+            <li class="burger-links"><a href="#social-links" class="burger-links">Social Media</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section id="explore" class="explore">
@@ -54,7 +71,7 @@
             Receive personalized recommendations for countries, hotels,
             activities and more
           </p>
-          <div class="explore-inpet-wrapper">
+          <div class="explore-input-wrapper">
             <input
               class="explore-input"
               type="text"
@@ -68,15 +85,15 @@
         <div class="steps-wrapper">
           <h2 class="steps-title">3 STEPS TO THE PERFECT TRIP</h2>
           <div class="steps-desc-wrap">
-            <div class="step">
+            <div class="step step1">
               <img class="step-img" src="./src/imgs/Frame28.svg" alt="step1" />
-              <p class="step-desc">Tell us what you want to do</p>
+              <p class="step-desc desc1">Tell us what you want to do</p>
             </div>
             <div class="step step2">
               <img class="step-img" src="./src/imgs/Frame11.svg" alt="step2" />
-              <p class="step-desc">Share us preferable dates</p>
+              <p class="step-desc desc2">Share us preferable dates</p>
             </div>
-            <div class="step">
+            <div class="step step3">
               <img class="step-img" src="./src/imgs/Frame12.svg" alt="step3" />
               <p class="step-desc">We will give you recommendations</p>
             </div>
@@ -87,6 +104,8 @@
         <div class="destinations-wrapper">
           <h2 class="destinations-title">POPULAR DESTINATIONS</h2>
           <div class="destinations-cards">
+            <img class="arrow-left" src="./src/imgs/arrowL.png" alt="arrowLeft">
+           
             <div class="dest-card">
               <img
                 class="dest-card-img"
@@ -111,6 +130,7 @@
               />
               <p class="dest-card-desc">USA</p>
             </div>
+            <img class="arrow-right" src="./src/imgs/arrowR.png" alt="arrowRight">
           </div>
           <div class="dest-slider">
             <div class="slider"></div>
@@ -129,7 +149,7 @@
                 <img
                   src="./src/imgs/Rectangle29.jpg"
                   alt="Thailand"
-                  class="stories-card-img"
+                  class="stories-card-img stories-img1"
                 />
                 <div class="stories-desc-wrap">
                   <h3 class="stories-card-title">
@@ -153,7 +173,7 @@
                 <img
                   src="./src/imgs/Rectangle30.jpg"
                   alt="Utah"
-                  class="stories-card-img"
+                  class="stories-card-img  stories-img2"
                 />
                 <div class="stories-desc-wrap">
                   <h3 class="stories-card-title">
@@ -177,7 +197,8 @@
                 <img
                   src="./src/imgs/Rectangle31.jpg"
                   alt="Mountains"
-                  class="stories-card-img"
+                  class="stories-card-img  stories-img3"
+                  
                 />
                 <div class="stories-desc-wrap">
                   <h3 class="stories-card-title">
@@ -201,7 +222,7 @@
                 <img
                   src="./src/imgs/Rectangle32.jpg"
                   alt="The Longest journey in my life!"
-                  class="stories-card-img"
+                  class="stories-card-img  stories-img4"
                 />
                 <div class="stories-desc-wrap">
                   <h3 class="stories-card-title">
@@ -250,7 +271,7 @@
           <p>All Rights Reserved © Travel Portal</p>
         </div>
         <div class="social-links-wrapper">
-          <ul class="social-links">
+          <ul id="social-links" class="social-links">
             <li class="social-link">
               <a
                 href="https://www.instagram.com/zholtko/"
@@ -289,4 +310,5 @@
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
