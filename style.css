@@ -1177,6 +1177,7 @@ footer {
     position: relative;
     top: -52%;
     right: -86%;
+    z-index: 99;
   }
 
   .explore {
