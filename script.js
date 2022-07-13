@@ -56,3 +56,14 @@ burgerLinks.forEach(element => {
         burgerMenu.classList.remove('burger-menu-active')
     })
 });
+
+document.addEventListener('click', (e)=>{
+    let burgerMenu = document.querySelector(".burger-menu");
+    if(burgerMenu.classList.contains('burger-menu-active')){
+        if(e.target.classList.contains('burger-menu')||e.target.classList.contains('burger-links-wrap')||e.target.classList.contains('burger-logo-img') ){
+
+        }else{
+            burgerMenu.classList.remove('burger-menu-active')
+        }
+    }
+})
