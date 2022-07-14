@@ -1613,27 +1613,41 @@ display: none;
   z-index: 99;
 }
 
+.burger-logo{
+  display: block;
+  width: 32px;
+  z-index: 99;
+}
+
 .burger:hover{
   cursor: pointer;
 }
 
+
+
 .burger-menu{
-  transition: 1s;
+ 
+  transition:2s;
   position: relative;
   z-index: 90;
   top: -50px;
   right: -35vw;
-  display: block;
+ 
   width: 165px;
   height: 250px;
   background: #F2785C;
   box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
   border-radius: 10px;
+  display: block;
 }
 
 
+body{
+  overflow-x: hidden;
+}
 .burger-menu-active{
-  transition: 1s;
+  display: block;
+  transition:2s;
   position: relative;
   z-index: 90;
   top: -50px;
@@ -1699,7 +1713,10 @@ transform: scale(1.2);
      box-shadow: none;
      background-position: 0 0px;
      height: 90px;
+     
    }
+
+
    header::after {
      display: none;
    }
@@ -1715,7 +1732,17 @@ transform: scale(1.2);
      top: -52%;
      right: -86%;
      z-index: 99;
+     
    }
+
+   .burger-menu-active{
+    display: block;
+    transition:2s;
+    position: relative;
+    z-index: 90;
+    top: -50px;
+    right: 40vw;
+  }
  
    .explore {
      height: 161px;
